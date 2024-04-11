@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.env
+message-test-a6666-firebase-adminsdk-iwbvq-519b2de83f.json
