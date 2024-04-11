@@ -4,8 +4,8 @@ import { sentNotification } from '../firebase/services/notification.service';
 let currentDeviceToken = '';
 
 export async function GET(req: Request) {
-  console.log('GET /api/user: ' + currentDeviceToken);
   sentNotification(currentDeviceToken, 'TEXT_MESSAGE');
+
   return NextResponse.json({
     status: 'OK',
     data: {
